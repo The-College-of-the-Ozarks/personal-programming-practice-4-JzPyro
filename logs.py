@@ -7,7 +7,10 @@ import math
 def g(x):
     return math.log(100 - x**2) + math.sqrt(84 - 5*x - x**2)
 
-x = input("Input the value for x: ")
+x = input("Input the value for x between (-10, 7]: ")
 x = float(x)
 
-print("g(" + str(x) + ") = " + str(g(x)))
+if -10 < x <=7:
+    print("g(" + str(x) + ") = " + str(g(x)))
+else:
+    print("that is not a input between (-10, 7)")
